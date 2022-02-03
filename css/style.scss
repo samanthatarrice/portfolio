@@ -1,0 +1,114 @@
+$color-blue: #5da6cb;
+$color-pink: #e4a1c2;
+$color-green: #c2e1d0;
+$color-purple: #8082b7;
+
+$body-font: 1.75vw "Mali", sans-serif;
+$header-font: "Lilita One", cursive;
+
+$main-margin: 7vw;
+
+* {
+  margin: 0;
+  line-height: 1.5;
+  vertical-align: bottom; 
+}
+
+body {
+  font: $body-font;
+}
+
+h1, h2, h3, h4 {
+  font-family: $header-font;
+  margin-bottom: 2vw;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 4.5vw;
+}
+
+.fab {
+  font-size: 5vw; 
+}
+
+/*--------------------
+        NAVBAR
+--------------------*/
+
+nav {
+  background-color: $color-blue;
+
+  .container-fluid {
+    font-size: 2vw;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1);
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,1);
+  border-color: rgba(255,255,255,.75);
+}
+
+/*--------------------
+        HEADER
+--------------------*/
+
+header {
+  margin: $main-margin;
+}
+
+/*--------------------
+        DIVIDER
+--------------------*/
+
+.divider {
+  background: linear-gradient($color-pink, $color-green, $color-blue, $color-purple);
+  width: 100%;
+  aspect-ratio: 8;
+  position: relative;
+  margin: 0;
+}
+
+.divider img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.divider img:nth-of-type(2n) {
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+}
+
+/*--------------------
+       PORTFOLIO
+--------------------*/
+
+
+.accordion-button {
+  font-size: 2.75vw;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus  {
+  box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px;
+}
+
+.accordion-button::after {
+  width: 3vw;
+  height: 3vw;
+  background-size: 3vw;
+}

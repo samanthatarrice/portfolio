@@ -5,37 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts & -->
+  <!-- Google Fonts & Font Awesome-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Mali&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
 
   <!-- Bootstrap & CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  
   <title>Sam's Portfolio</title>
 </head>
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand">Samantha Tarrice</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+  <nav class="navbar navbar-dark navbar-fixed navbar-expand-md">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand d-md-none">Samantha Tarrice</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
+        <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+          <li class="nav-item active ms-auto d-md-none mt-2">
             <a href="#" class="nav-link active" aria-current="page">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Portfolio</a>
+          <li class="nav-item text-end ms-auto">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+          <li class="nav-item mx-md-auto ms-auto">
+            <a href="#about" class="nav-link">About</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+          <li class="nav-item ms-auto ms-md-0 me-md-auto">
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -43,12 +45,17 @@
   </nav>
 
   <header>
-    <div class="header-container">
-      <div class="header-text">
-        <h1>Hi! I'm Sam...</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, praesentium neque quas reprehenderit distinctio quia quam, repellat velit ut quo nihil id a beatae dolores voluptas ipsum recusandae ab expedita.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <h1>Hi! I'm Sam...</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, praesentium neque quas reprehenderit distinctio quia quam, repellat velit ut quo nihil id a beatae dolores voluptas ipsum recusandae ab expedita.</p>
+        </div>
+        <div class="col">
+          <img src="images/hero.png" alt="Woman sitting at desk working on a laptop." class="w-100">
+        </div>
+        
       </div>
-      <img src="images/hero.png" alt="Woman sitting at desk working on a laptop." class="woman-desk">
     </div>
   </header>
 
@@ -57,132 +64,107 @@
     <img src="images/waves.svg" alt="wavy white divider">
   </div>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-container">
-      <div class="portfolio-row">
-        <div class="portfolio-section">
-          <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor">
-          <div class="portfolio-text">
-            <h3>Mental Health DBT Card App</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi exercitationem, perferendis, dolor eos cum aspernatur vitae dicta a totam voluptate deleniti harum provident velit quibusdam neque adipisci vero magni quasi.</p>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-row">
-        <div class="portfolio-section">
-          <div class="portfolio-text">
-            <h3>Sean's Portfolio</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi exercitationem, perferendis, dolor eos cum aspernatur vitae dicta a totam voluptate deleniti harum provident velit quibusdam neque adipisci vero magni quasi.</p>
-          </div>
-          <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor">
-        </div>
-      </div>
-      <div class="portfolio-row">
-        <div class="portfolio-section">
-          <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor">
-        <div class="portfolio-text">
-          <h3>Bob Ross' Search & Paint</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi exercitationem, perferendis, dolor eos cum aspernatur vitae dicta a totam voluptate deleniti harum provident velit quibusdam neque adipisci vero magni quasi.</p>
-        </div>
-        </div>
-      </div>
-      <div class="portfolio-row">
-        <div class="portfolio-section">
-          <div class="portfolio-text">
-            <h3>Stickies</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi exercitationem, perferendis, dolor eos cum aspernatur vitae dicta a totam voluptate deleniti harum provident velit quibusdam neque adipisci vero magni quasi.</p>
-          </div>
-          <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor">
-        </div>
-      </div>
-    </div>
-    <div class="github-section">
-      <p>See more of my work on <span>Github</span></p>
-      <i class="fab fa-github"></i>
-    </div>
-  </section>
+  <main>
 
-  <!-- Old Portfolio Section
     <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-containers bob-container">
-      <div class="portfolio-images">
-        <img src="images/monitor-blue.png" alt="blue monitor" class="appear monitor">
-        <img src="images/tablet.png" alt="tablet" class="tablet">
-        <img src="images/" alt="">
-        <a href="" target="_blank"><img src="images/bob-monitor.png" alt="Bob's Search & Paint project on a monitor." class="screen-view bob-monitor"></a>
-        <a href="" target="_blank"><img src="images/bob-tablet.png" alt="Bob's Search & Paint project on a tablet." class="screen-view bob-tablet"></a>
-      </div>
-      <div class="portfolio-text">
-        <h3>Bob's Search & Paint</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam fuga recusandae voluptatem accusantium labore dolore repudiandae, quo dolores dolorum esse distinctio ipsam enim asperiores quas dignissimos natus, non ipsa!</p>
-      </div>
-    </div>
-    <div class="portfolio-containers sean-container">
-      <div class="portfolio-text">
-        <h3>Sean's Portfolio</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam fuga recusandae voluptatem accusantium labore dolore repudiandae, quo dolores dolorum esse distinctio ipsam enim asperiores quas dignissimos natus, non ipsa!</p>
-      </div>
-      <div class="portfolio-images">
-        <img src="images/mobile-blue.png" alt="mobile phone" class="mobile">
-        <img src="images/monitor-blue.png" alt="blue monitor" class="monitor">
-        <img src="images/sean-monitor.png" alt="Sean's Profile project on monitor." class="screen-view sean-monitor">
-        <img src="images/sean-mobile.png" alt="Sean's Profile project on mobile phone." class="screen-view sean-mobile">
-      </div>
-    </div>
-    <div class="portfolio-containers bmo-container">
-      <div class="portfolio-images">
-        <img src="images/monitor-blue.png" alt="blue monitor" class="monitor">
-        <img src="images/tablet.png" alt="tablet" class="tablet">
-      </div>
-      <div class="portfolio-text">
-        <h3>BMO's Matching Game</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam fuga recusandae voluptatem accusantium labore dolore repudiandae, quo dolores dolorum esse distinctio ipsam enim asperiores quas dignissimos natus, non ipsa!</p>
-      </div>
-    </div>
-    <div class="portfolio-containers stickies-container">
-      <div class="portfolio-text">
-        <h3>Stickies</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam fuga recusandae voluptatem accusantium labore dolore repudiandae, quo dolores dolorum esse distinctio ipsam enim asperiores quas dignissimos natus, non ipsa!</p>
-      </div>
-      <div class="portfolio-images">
-        <img src="images/mobile-blue.png" alt="mobile phone" class="mobile">
-        <img src="images/monitor-blue.png" alt="blue monitor" class="monitor">
-      </div>
-    </div>
-    <h3 class="github-link">See more of my work on <a href="">GITHUB</a></h3>
-  </section> -->
+      <h2 class="text-center">Portfolio</h2>
+      <div class="accordion" id="portfolioAccordion">
+        <div class="accordion-item">
+          <div class="d-flex justify-content-center flex-wrap">
+            <h3 class="accordion-header w-100" id="projectHeading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#project1">Bob Ross' Search & Paint</button>
+            </h3>
+          </div>
+          <div id="project1" class="accordion-collapse collapse show mb-5" data-bs-parent="#portfolioAccordion">
+            <div class="accordion-body container">
+              <div class="row">
+                <div class="col">
+                  <img src="images/monitor-black.png" alt="Black and white computer monitor." class="w-100">
+                </div>
+                <div class="col">
+                  <h4>Bob Ross' Search & Paint</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi exercitationem, perferendis, dolor eos cum aspernatur vitae dicta a totam voluptate deleniti harum provident velit quibusdam neque adipisci vero magni quasi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="projectHeading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project2">Sean's Portfolio</button>
+          </h3>
+          <div id="project2" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+            <div class="accordion-body container">
+              <div class="row d-flex flex-row-reverse">
+                <div class="col">
+                  <img src="images/monitor-black.png" alt="Black and white computer monitor." class="w-100">
+                </div>
+                <div class="col">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi exercitationem, perferendis, dolor eos cum aspernatur vitae dicta a totam voluptate deleniti harum provident velit quibusdam neque adipisci vero magni quasi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="projectHeading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project3">BMO's Matching Game</button>
+          </h3>
+          <div id="project3" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+            <div class="accordion-body container">
+              <div class="row">
+                <div class="col">
+                  <img src="images/monitor-black.png" alt="Black and white computer monitor." class="w-100">
+                </div>
+                <div class="col">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi exercitationem, perferendis, dolor eos cum aspernatur vitae dicta a totam voluptate deleniti harum provident velit quibusdam neque adipisci vero magni quasi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="divider">
-    <img src="images/waves2.svg" alt="wavy white divider">
-    <img src="images/waves.svg" alt="wavy white divider">
-  </div>
-    
-  <section id="about">
-    <h2>About</h2>
-    <div class="about-container">
-      <div>
-        <h3>Tech Toolkit</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt ullam quidem debitis voluptas ipsum doloribus sed ipsam illum minima adipisci amet eum, aliquid consectetur nihil. Ea sint in culpa!</p>
       </div>
-      <div>
-        <h3>Interests</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum possimus soluta vero veniam cupiditate praesentium ducimus magnam incidunt quis. Ipsam optio deleniti doloremque pariatur, aliquam magni accusantium tenetur fuga facilis.</p>
+      
+        
+      <div class="text-center">
+        <p>See more of my work on <span>Github</span></p>
+        <i class="fab fa-github"></i>
       </div>
-      <div>
-        <h3>Experience</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos fugiat autem assumenda nemo necessitatibus doloribus rerum eveniet eligendi architecto, nobis cupiditate animi nostrum soluta nam? Quia dolore molestiae excepturi expedita.</p>
-      </div>
-      <div>
-        <h3>Education</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio harum amet possimus fugiat est voluptatum quas praesentium rerum sequi mollitia iusto, reprehenderit quae perspiciatis magni ab maxime ducimus magnam?</p>
-      </div>
+    </section>
+
+    <div class="divider">
+      <img src="images/waves2.svg" alt="wavy white divider">
+      <img src="images/waves.svg" alt="wavy white divider">
     </div>
-  </section>
+      
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-container">
+        <div>
+          <h3>Tech Toolkit</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt ullam quidem debitis voluptas ipsum doloribus sed ipsam illum minima adipisci amet eum, aliquid consectetur nihil. Ea sint in culpa!</p>
+        </div>
+        <div>
+          <h3>Interests</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum possimus soluta vero veniam cupiditate praesentium ducimus magnam incidunt quis. Ipsam optio deleniti doloremque pariatur, aliquam magni accusantium tenetur fuga facilis.</p>
+        </div>
+        <div>
+          <h3>Experience</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos fugiat autem assumenda nemo necessitatibus doloribus rerum eveniet eligendi architecto, nobis cupiditate animi nostrum soluta nam? Quia dolore molestiae excepturi expedita.</p>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio harum amet possimus fugiat est voluptatum quas praesentium rerum sequi mollitia iusto, reprehenderit quae perspiciatis magni ab maxime ducimus magnam?</p>
+        </div>
+      </div>
+    </section>
+  
+  </main>
 
   
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="script.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,52 +1,54 @@
 * {
   margin: 0;
-  font-family: "Mali", sans-serif;
-  font-size: 10px;
   line-height: 1.5;
   vertical-align: bottom; }
+
+body {
+  font: 1.75vw "Mali", sans-serif; }
+
+h1, h2, h3, h4 {
+  font-family: "Lilita One", cursive;
+  margin-bottom: 2vw; }
+
+h1 {
+  font-size: 6vw; }
+
+h2 {
+  font-size: 4.5vw; }
 
 .fab {
   font-size: 5vw; }
 
+/*--------------------
+        NAVBAR
+--------------------*/
 nav {
   background-color: #5da6cb; }
-  nav a.nav-link,
-  nav a.navbar-brand {
-    font-size: 2.5vw;
-    margin: 0.5vw 2vw;
-    color: white; }
-  nav .navbar-toggler {
-    color: white; }
+  nav .container-fluid {
+    font-size: 2vw; }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+
+.navbar-dark .navbar-toggler {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.75); }
+
+/*--------------------
+        HEADER
+--------------------*/
 header {
-  margin: 6vw 8vw; }
+  margin: 7vw; }
 
-h1 {
-  font: 6vw "Lilita One", cursive;
-  color: #e4a1c2; }
-
-.header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.header-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.header-container p {
-  padding: 0 4rem 0 0;
-  font-size: 2vw; }
-
-.woman-desk {
-  width: 50%; }
-
+/*--------------------
+        DIVIDER
+--------------------*/
 .divider {
   background: linear-gradient(#e4a1c2, #c2e1d0, #5da6cb, #8082b7);
   width: 100%;
   aspect-ratio: 8;
-  position: relative; }
+  position: relative;
+  margin: 0; }
 
 .divider img:first-child {
   position: absolute;
@@ -58,41 +60,21 @@ h1 {
   left: 0;
   bottom: 0; }
 
-h2 {
-  font: 5vw "Lilita One", cursive;
-  color: #e4a1c2;
-  text-align: center;
-  padding-bottom: 2vw; }
+/*--------------------
+       PORTFOLIO
+--------------------*/
+.accordion-button {
+  font-size: 2.75vw; }
 
-h3 {
-  font: 2vw "Lilita One", cursive;
-  text-align: center; }
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #fff;
+  box-shadow: none; }
 
-.monitor {
-  width: 40%; }
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus {
+  box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px; }
 
-.portfolio-row {
-  border-bottom: 1px black solid; }
-
-.portfolio-section {
-  display: flex;
-  justify-content: center;
-  padding: 3vw 0;
-  margin: 0 8vw; }
-
-.portfolio-text {
-  padding: 0 2vw; }
-
-.portfolio-text p {
-  font-size: 1.25vw;
-  padding-top: 2rem; }
-
-.github-section {
-  text-align: center;
-  padding: 4rem 0; }
-  .github-section p {
-    font-size: 1.25vw;
-    margin-bottom: 2rem; }
-  .github-section span {
-    font: 1.25vw "Lilita One", cursive;
-    vertical-align: baseline; }
+.accordion-button::after {
+  width: 3vw;
+  height: 3vw;
+  background-size: 3vw; }

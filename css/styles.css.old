@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  line-height: 1.5;
+  vertical-align: bottom; }
+
+body {
+  font-family: "Mali", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Lilita One", cursive; }
+
+.fab {
+  font-size: 5vw; }
+
+nav {
+  background-color: #e4a1c2; }
+
+header,
+main {
+  margin: 5vw; }
