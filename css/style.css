@@ -11,13 +11,28 @@ h1, h2, h3, h4 {
   margin-bottom: 2vw; }
 
 h1 {
-  font-size: 6vw; }
+  font-size: 7vw;
+  width: 40vw;
+  background: -webkit-linear-gradient(45deg, #8082b7, #e4a1c2, #c2e1d0, #8082b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 h2 {
-  font-size: 4.5vw; }
+  font-size: 6vw;
+  width: 23vw;
+  margin: 0 auto;
+  background: -webkit-linear-gradient(45deg, #8082b7, #e4a1c2, #c2e1d0, #8082b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+h3 {
+  font-size: 3vw; }
+
+h4 {
+  font-size: 2.5vw; }
 
 .fab {
-  font-size: 5vw; }
+  font-size: 7vw; }
 
 /*--------------------
         NAVBAR
@@ -26,6 +41,12 @@ nav {
   background-color: #5da6cb; }
   nav .container-fluid {
     font-size: 2vw; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: white; }
@@ -38,7 +59,8 @@ nav {
         HEADER
 --------------------*/
 header {
-  margin: 7vw; }
+  margin: 7vw;
+  padding-top: 5rem; }
 
 /*--------------------
         DIVIDER
@@ -64,7 +86,8 @@ header {
        PORTFOLIO
 --------------------*/
 .accordion-button {
-  font-size: 2.75vw; }
+  font-size: 2.75vw;
+  color: #5da6cb; }
 
 .accordion-button:not(.collapsed) {
   color: #fff;
@@ -78,3 +101,38 @@ header {
   width: 3vw;
   height: 3vw;
   background-size: 3vw; }
+
+.accordion-button:not(.collapsed)::after {
+  opacity: 0.75; }
+
+.app-view-container {
+  position: relative; }
+  .app-view-container .monitor {
+    position: relative;
+    z-index: 1; }
+  .app-view-container .app {
+    position: absolute;
+    top: 5.5%;
+    left: 5%;
+    width: 90%; }
+
+/*--------------------
+        ABOUT
+--------------------*/
+.sam-sitting {
+  border: 0.75vw solid #c2e1d0; }
+
+.toolkit-card {
+  background: linear-gradient(45deg, #e4a1c2, #c2e1d0); }
+
+.toolkit-card .fab {
+  font-size: 5vw; }
+
+.experience-card {
+  background: linear-gradient(45deg, #5da6cb, #e4a1c2, #e4a1c2, #c2e1d0); }
+
+.experience-list p {
+  font-size: 1.5vw; }
+
+.experience-list a {
+  color: black; }
