@@ -171,28 +171,37 @@ header {
   background: linear-gradient(45deg, $color-pink, $color-green);
 }
 
+.experience-card {
+  background: linear-gradient(45deg, $color-blue, $color-pink, $color-pink, $color-green);
+}
+
+.education-card {
+  background: linear-gradient(45deg, $color-purple, $color-blue, $color-blue, $color-pink);
+  height: 40vw;
+}
+
+.fun-facts-card {
+  background: linear-gradient(45deg, $color-blue, $color-pink, $color-pink);
+  height: 40vw;
+}
+
+.experience-item {
+
+  p {
+    font-size: 1.5vw;
+  }
+  a {
+    color: black;
+  }
+}
+
 .toolkit-card {
   .fab {
     font-size: 5vw;
   }
 }
 
-.experience-card {
-  background: linear-gradient(45deg, $color-blue, $color-pink, $color-pink, $color-green);
-}
 
-.experience-list {
-
-  p {
-    font-size: 1.5vw;
-  }
-  span {
-  
-  }
-  a {
-    color: black;
-  }
-}
 
 // ul.experience-list {
 //   margin-left: 3vw;

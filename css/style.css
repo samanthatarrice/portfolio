@@ -125,14 +125,22 @@ header {
 .toolkit-card {
   background: linear-gradient(45deg, #e4a1c2, #c2e1d0); }
 
-.toolkit-card .fab {
-  font-size: 5vw; }
-
 .experience-card {
   background: linear-gradient(45deg, #5da6cb, #e4a1c2, #e4a1c2, #c2e1d0); }
 
-.experience-list p {
+.education-card {
+  background: linear-gradient(45deg, #8082b7, #5da6cb, #5da6cb, #e4a1c2);
+  height: 40vw; }
+
+.fun-facts-card {
+  background: linear-gradient(45deg, #5da6cb, #e4a1c2, #e4a1c2);
+  height: 40vw; }
+
+.experience-item p {
   font-size: 1.5vw; }
 
-.experience-list a {
+.experience-item a {
   color: black; }
+
+.toolkit-card .fab {
+  font-size: 5vw; }

@@ -1,7 +1,7 @@
 {
   "name": "sams_portfolio",
   "version": "1.0.0",
-  "description": "This is my professional portfolio showcasing my web development work.",
+  "description": "My professional portfolio showcasing my web development work.",
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
