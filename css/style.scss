@@ -168,20 +168,21 @@ header {
 }
 
 .toolkit-card {
-  background: linear-gradient(45deg, $color-pink, $color-green);
+  background: linear-gradient(45deg, rgba(228, 161, 194, 0.5), rgba(194, 225, 208, 0.5));
 }
 
 .experience-card {
-  background: linear-gradient(45deg, $color-blue, $color-pink, $color-pink, $color-green);
+  background: linear-gradient(45deg, rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5), rgba(228, 161, 194, 0.5), rgba(194, 225, 208, 0.5));
+  
 }
 
 .education-card {
-  background: linear-gradient(45deg, $color-purple, $color-blue, $color-blue, $color-pink);
+  background: linear-gradient(45deg, rgba(128, 130, 183, 0.5), rgba(93, 166, 203, 0.5), rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5));
   height: 40vw;
 }
 
 .fun-facts-card {
-  background: linear-gradient(45deg, $color-blue, $color-pink, $color-pink);
+  background: linear-gradient(45deg, rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5), rgba(228, 161, 194, 0.5));
   height: 40vw;
 }
 

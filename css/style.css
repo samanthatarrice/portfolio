@@ -123,17 +123,17 @@ header {
   border: 0.75vw solid #c2e1d0; }
 
 .toolkit-card {
-  background: linear-gradient(45deg, #e4a1c2, #c2e1d0); }
+  background: linear-gradient(45deg, rgba(228, 161, 194, 0.5), rgba(194, 225, 208, 0.5)); }
 
 .experience-card {
-  background: linear-gradient(45deg, #5da6cb, #e4a1c2, #e4a1c2, #c2e1d0); }
+  background: linear-gradient(45deg, rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5), rgba(228, 161, 194, 0.5), rgba(194, 225, 208, 0.5)); }
 
 .education-card {
-  background: linear-gradient(45deg, #8082b7, #5da6cb, #5da6cb, #e4a1c2);
+  background: linear-gradient(45deg, rgba(128, 130, 183, 0.5), rgba(93, 166, 203, 0.5), rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5));
   height: 40vw; }
 
 .fun-facts-card {
-  background: linear-gradient(45deg, #5da6cb, #e4a1c2, #e4a1c2);
+  background: linear-gradient(45deg, rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5), rgba(228, 161, 194, 0.5));
   height: 40vw; }
 
 .experience-item p {
