@@ -81,6 +81,24 @@ header {
   left: 0;
   bottom: 0; }
 
+.top-white-line {
+  width: 100%;
+  height: 1vw;
+  position: absolute;
+  top: -7.25%;
+  background-color: white; }
+
+.bottom-white-line {
+  width: 100%;
+  height: 1vw;
+  position: absolute;
+  bottom: -1.5%;
+  background-color: white; }
+
+.footer-divider {
+  position: relative;
+  height: 13.25vw; }
+
 /*--------------------
        PORTFOLIO
 --------------------*/
