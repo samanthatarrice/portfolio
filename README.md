@@ -1,1 +1,2 @@
-Add aria attributes to HTML
+- Add aria attributes to HTML
+- Remove fixed navbar when user flips phone to horizontal mode

@@ -179,3 +179,7 @@ footer {
     font-size: 15vw; }
   .toolkit-card .fab {
     font-size: 8vw; } }
+
+@media (max-width: 576px) {
+  header {
+    margin-top: 25vw; } }
