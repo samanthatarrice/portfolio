@@ -74,13 +74,6 @@ nav {
   }
 }
 
-.navbar {
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
-  // z-index: 2000;
-}
-
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255,255,255,1);
 }
@@ -88,6 +81,11 @@ nav {
 .navbar-dark .navbar-toggler {
   color: rgba(255,255,255,1);
   border-color: rgba(255,255,255,.75);
+}
+
+.navbar-toggler {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 
 /*--------------------
@@ -197,7 +195,6 @@ header {
 }
 
 .experience-item {
-
   p {
     font-size: 1.5vw;
   }
@@ -208,7 +205,7 @@ header {
 
 .toolkit-card {
   .fab {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 }
 
@@ -228,7 +225,7 @@ footer {
   }
 
   a {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 
   h1 {
@@ -257,9 +254,13 @@ footer {
     font-size: 5vw;
   }
 
+  .experience-item li {
+    font-size: 4vw;
+  }
+
   .education-card,
   .fun-facts-card {
-    height: 80vw;
+    height: 50vw;
   }
 
   .fab {

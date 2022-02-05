@@ -50,6 +50,10 @@ nav {
   color: white;
   border-color: rgba(255, 255, 255, 0.75); }
 
+.navbar-toggler {
+  border-radius: 50%;
+  aspect-ratio: 1/1; }
+
 /*--------------------
         HEADER
 --------------------*/
@@ -138,7 +142,7 @@ header {
   color: black; }
 
 .toolkit-card .fab {
-  font-size: 5vw; }
+  font-size: 4.5vw; }
 
 /*--------------------
         FOOTER
@@ -151,7 +155,7 @@ footer {
   .experience-item p {
     font-size: 3.25vw; }
   a {
-    font-size: 4.5vw; }
+    font-size: 4vw; }
   h1 {
     font-size: 12vw;
     width: 75vw; }
@@ -166,9 +170,11 @@ footer {
     margin-top: 15vw; }
   .card-title {
     font-size: 5vw; }
+  .experience-item li {
+    font-size: 4vw; }
   .education-card,
   .fun-facts-card {
-    height: 80vw; }
+    height: 50vw; }
   .fab {
     font-size: 15vw; }
   .toolkit-card .fab {
