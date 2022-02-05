@@ -4,7 +4,8 @@
   vertical-align: bottom; }
 
 body {
-  font: 1.75vw "Mali", sans-serif; }
+  font-family: "Mali", sans-serif;
+  font-size: 1.75vw; }
 
 h1, h2, h3, h4 {
   font-family: "Lilita One", cursive;
@@ -38,15 +39,9 @@ h4 {
         NAVBAR
 --------------------*/
 nav {
-  background-color: #5da6cb; }
+  background-color: rgba(93, 166, 203, 0.75); }
   nav .container-fluid {
     font-size: 2vw; }
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2000; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: white; }
@@ -60,13 +55,13 @@ nav {
 --------------------*/
 header {
   margin: 7vw;
-  padding-top: 5rem; }
+  padding-top: 5vw; }
 
 /*--------------------
         DIVIDER
 --------------------*/
 .divider {
-  background: linear-gradient(#e4a1c2, #c2e1d0, #5da6cb, #8082b7);
+  background: linear-gradient(rgba(228, 161, 194, 0.5), rgba(194, 225, 208, 0.5), rgba(93, 166, 203, 0.5), rgba(128, 130, 183, 0.5));
   width: 100%;
   aspect-ratio: 8;
   position: relative;
@@ -144,3 +139,37 @@ header {
 
 .toolkit-card .fab {
   font-size: 5vw; }
+
+/*--------------------
+        FOOTER
+--------------------*/
+footer {
+  background: linear-gradient(45deg, rgba(128, 130, 183, 0.5), rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5), rgba(194, 225, 208, 0.5)); }
+
+@media (max-width: 768px) {
+  body,
+  .experience-item p {
+    font-size: 3.25vw; }
+  a {
+    font-size: 4.5vw; }
+  h1 {
+    font-size: 12vw;
+    width: 75vw; }
+  h2 {
+    font-size: 9vw;
+    width: 45vw; }
+  .accordion-button {
+    font-size: 5vw; }
+  h4 {
+    font-size: 4vw; }
+  header {
+    margin-top: 15vw; }
+  .card-title {
+    font-size: 5vw; }
+  .education-card,
+  .fun-facts-card {
+    height: 80vw; }
+  .fab {
+    font-size: 15vw; }
+  .toolkit-card .fab {
+    font-size: 8vw; } }

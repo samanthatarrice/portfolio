@@ -1,9 +1,17 @@
+// Solid Colors:
 $color-blue: #5da6cb;
 $color-pink: #e4a1c2;
 $color-green: #c2e1d0;
 $color-purple: #8082b7;
 
-$body-font: 1.75vw "Mali", sans-serif;
+// Transparent Colors:
+$transparent-blue: rgba(93, 166, 203, 0.5);
+$transparent-pink: rgba(228, 161, 194, 0.5);
+$transparent-purple: rgba(128, 130, 183, 0.5);
+$transparent-green: rgba(194, 225, 208, 0.5);
+
+// Fonts:
+$body-font: "Mali", sans-serif;
 $header-font: "Lilita One", cursive;
 
 $main-margin: 7vw;
@@ -15,7 +23,8 @@ $main-margin: 7vw;
 }
 
 body {
-  font: $body-font;
+  font-family: $body-font;
+  font-size: 1.75vw;
 }
 
 h1, h2, h3, h4 {
@@ -58,7 +67,7 @@ h4 {
 --------------------*/
 
 nav {
-  background-color: $color-blue;
+  background-color: rgba(93, 166, 203, 0.75);
 
   .container-fluid {
     font-size: 2vw;
@@ -66,10 +75,10 @@ nav {
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2000;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
+  // z-index: 2000;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -87,7 +96,8 @@ nav {
 
 header {
   margin: $main-margin;
-  padding-top: 5rem;
+  padding-top: 5vw;
+
 }
 
 /*--------------------
@@ -95,7 +105,7 @@ header {
 --------------------*/
 
 .divider {
-  background: linear-gradient($color-pink, $color-green, $color-blue, $color-purple);
+  background: linear-gradient($transparent-pink, $transparent-green, $transparent-blue, $transparent-purple);
   width: 100%;
   aspect-ratio: 8;
   position: relative;
@@ -202,15 +212,64 @@ header {
   }
 }
 
+/*--------------------
+        FOOTER
+--------------------*/
 
+footer {
+  background: linear-gradient(45deg, $transparent-purple, $transparent-blue, $transparent-pink, $transparent-green);
+}
 
-// ul.experience-list {
-//   margin-left: 3vw;
-//   background: url('../images/star.png') no-repeat;
+@media (max-width: 768px) {
 
-//   li, p {
-//     margin-left: 1vw;
-//     list-style: none;
-//     vertical-align: middle;
-//   }
-// }
+  body, 
+  .experience-item p {
+    font-size: 3.25vw;
+  }
+
+  a {
+    font-size: 4.5vw;
+  }
+
+  h1 {
+    font-size: 12vw;
+    width: 75vw;
+  }
+
+  h2 {
+    font-size: 9vw;
+    width: 45vw;
+  }
+ 
+  .accordion-button {
+    font-size: 5vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  header {
+    margin-top: 15vw;
+  }
+
+  .card-title {
+    font-size: 5vw;
+  }
+
+  .education-card,
+  .fun-facts-card {
+    height: 80vw;
+  }
+
+  .fab {
+    font-size: 15vw;
+  }
+
+  .toolkit-card {
+    .fab {
+      font-size: 8vw;
+    }
+  }
+}
+

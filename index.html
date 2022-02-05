@@ -25,10 +25,10 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-dark navbar-expand-md">
+  <nav class="navbar navbar-dark navbar-expand-md fixed-top py-3">
     <div class="container-fluid">
       <a href="#" class="navbar-brand d-md-none">Samantha Tarrice</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -81,7 +81,7 @@
           <div id="project1" class="accordion-collapse collapse show mb-2 mb-sm-3" data-bs-parent="#portfolioAccordion">
             <div class="accordion-body container px-5 px-sm-1">
               <div class="row">
-                <div class="app-view-container col-sm-6 me-2-sm">
+                <div class="app-view-container col-md-6 me-2-sm pb-4 pb-md-0">
                   <a href="https://bobs-search-n-paint.netlify.app/" target="_blank">
                     <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor w-100">
                     <img src="images/bob-monitor.png" alt="Bob Ross' Search & Paint desktop view." class="app">
@@ -102,7 +102,7 @@
           <div id="project2" class="accordion-collapse collapse mb-2 mb-sm-3" data-bs-parent="#portfolioAccordion">
             <div class="accordion-body container px-5 px-sm-1">
               <div class="row d-flex flex-row-reverse">
-                <div class="app-view-container col-sm-6 me-2-sm">
+                <div class="app-view-container col-md-6 me-2-sm pb-4 pb-md-0">
                   <a href="https://www.sean-tarrice.com/" target="_blank">
                     <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor w-100">
                     <img src="images/sean-monitor.png" alt="Sean's portfolio desktop view." class="app">
@@ -123,7 +123,7 @@
           <div id="project3" class="accordion-collapse collapse mb-2 mb-sm-3" data-bs-parent="#portfolioAccordion">
             <div class="accordion-body container px-5 px-sm-1">
               <div class="row">
-                <div class="app-view-container col-sm-6 me-2-sm">
+                <div class="app-view-container col-md-6 me-2-sm pb-4 pb-md-0">
                   <a href="https://samanthatarrice.github.io/notes_app/" target="_blank">
                     <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor w-100">
                     <img src="images/stickies-monitor.png" alt="Stikies app desktop view." class="app">
@@ -144,7 +144,7 @@
           <div id="project4" class="accordion-collapse collapse mb-2 mb-sm-3" data-bs-parent="#portfolioAccordion">
             <div class="accordion-body container px-5 px-sm-1">
               <div class="row d-flex flex-row-reverse">
-                <div class="app-view-container col-sm-6 me-2-sm">
+                <div class="app-view-container col-md-6 me-2-sm pb-4 pb-md-0">
                   <a href="https://samanthatarrice.github.io/bmos_matching_game/" target="_blank">
                     <img src="images/monitor-black.png" alt="Black and white computer monitor." class="monitor w-100">
                     <img src="images/bmo-monitor.png" alt="BMO's Matching Game desktop view." class="app">
@@ -238,9 +238,45 @@
       <img src="images/waves.svg" alt="wavy white divider">
     </div>
 
-    <section id="contact">
+    <section id="contact" class="pb-5">
       <h2 class="text-center my-4">Contact</h2>
+      <div class="container">
+        <div class="row d-flex align-items-center my-5">
+          <div class="col-12 col-md-6 text-center">
+            <img src="images/contact.png" alt="Clipart of various contact method symbols" class="w-75 mb-md-0 mb-5">
+          </div>
+          <div class="col">
+            <form action="" class="w-75 mx-auto">
+              <div class="mb-3">
+                <label for="contactName" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="contactName">
+              </div>
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="contactEmail">
+              </div>
+              <div class="mb-3">
+                <label for="contactMessage" class="form-label">Message:</label>
+                <textarea id="contactMessage" class="form-control" rows="10"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+
+    <footer id="footer" class="pb-5">
+      <div class="">
+        <img src="images/waves2.svg" alt="wavy white divider">
+      </div>
+      <p class="text-center">2022 © Samantha Tarrice</p>
+      <div class="d-flex justify-content-center">
+        <i class="fab fa-github-square m-3"></i>
+        <i class="fab fa-linkedin m-3"></i>
+      </div>
+    </footer>
   
   </main>
 
@@ -248,6 +284,7 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
