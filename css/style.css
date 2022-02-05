@@ -182,4 +182,23 @@ footer {
 
 @media (max-width: 576px) {
   header {
-    margin-top: 25vw; } }
+    margin-top: 27vw; }
+  body,
+  .experience-item p {
+    font-size: 5vw; }
+  a {
+    font-size: 5.5vw; }
+  h1 {
+    font-size: 14vw;
+    width: 80vw; }
+  h2 {
+    font-size: 12vw; }
+  .accordion-button {
+    font-size: 7.5vw; }
+  h4 {
+    font-size: 6vw; }
+  .card-title {
+    font-size: 6.5vw; }
+  .education-card,
+  .fun-facts-card {
+    height: 90vw; } }
