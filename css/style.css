@@ -153,9 +153,6 @@ header {
   background: linear-gradient(45deg, rgba(93, 166, 203, 0.5), rgba(228, 161, 194, 0.5), rgba(228, 161, 194, 0.5));
   height: 40vw; }
 
-.experience-item p {
-  font-size: 1.5vw; }
-
 .experience-item a {
   color: black; }
 
@@ -188,8 +185,6 @@ footer {
     margin-top: 15vw; }
   .card-title {
     font-size: 5vw; }
-  .experience-item li {
-    font-size: 4vw; }
   .education-card,
   .fun-facts-card {
     height: 50vw; }
